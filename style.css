@@ -1,0 +1,280 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Cantarell&family=Kdam+Thmor+Pro&family=Quicksand:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: o;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+}
+
+:root {
+    --cor01: #9a7207;
+    --cor02: #a85d64;
+    --cor03: #963502;
+    --cor04: #fc8445;
+    --cor05: #0917f1;
+    --cortx: #000;
+    --branco: #f7fcff;
+}
+
+/* style of top bar and footer*/
+
+.fa-brands {
+    transform: scale(1.5);
+    color: var(--cor01);
+    padding: 3px;
+    transition: 3s;
+}
+.fa-brands:hover {
+    color: var(--cor03);
+    border-radius: 5px;
+    box-shadow: inset 0 0 0 25px var(--cor01);
+}
+
+header {
+    height: 100%;;
+    display: flex;
+    border-bottom:1.5px solid var(--cor01);  
+    justify-content: space-around;
+    align-items: center;
+
+}
+nav {
+    width: 80%;
+}
+
+ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+li {
+    padding: 10px;
+    color: var(--cor01);
+    font-size: 20px;
+    transition: 5s;
+    border-radius: 5px;
+    text-shadow: -0.7px 0 0 rgba(0, 0, 0, 0.39);
+    cursor: pointer;
+}
+li:hover {
+    box-shadow: inset 150px 0 0 0 var(--cor01);
+    color: var(--cor03);
+}
+
+.logo-top-bar {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    height: 60px;
+    width: 60px;
+    object-fit: contain;
+    display: flex;
+    justify-content: start;
+    border-radius: 50%;
+}
+
+small {
+    font-size: small;
+}
+
+footer {
+    border-top: 3px solid var(--cor03);
+    padding: 10px;
+    background-image: linear-gradient(var(--cor04), var(--cor03));
+    width: auto;
+    opacity: 80%;
+}
+
+/* style of text */
+.titulo-principal {
+    font-size: 20.5px;
+    color: var(--cortx);
+}
+#section-sobre {
+    margin: 10.95%;
+    border: 3px solid var(--cor01);
+    border-radius: 5px;
+}
+
+#section-dicas {
+    margin-top: 60px;
+    margin-left:  10%;
+    margin-right: 10%;
+    border: 3px solid var(--cor01);
+    border-radius: 5px;
+}
+
+section {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-left:  10%;
+    margin-right: 10%;
+    border: 3px solid var(--cor01);
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 18px;
+    color: var(--cortx);
+    padding: 5px;
+    margin: 0;
+    background-image: linear-gradient(var(--cor01), var(--cor04));
+}
+
+p {
+    text-decoration: none;
+    font-size: 15px;
+    color: var(--cortx);
+    margin: 15px;
+}
+#link-fgv {
+    color: var(--cortx);
+    cursor: pointer;
+    font-size: 15px;
+}
+#link-fgv:hover {
+    background: var(--cor04);
+    border: 1px solid (--cor04);
+    border-radius: 3px;
+    margin: 2px;
+}
+
+/* style of catalog*/
+
+.imoveis-casds-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.cards-content {
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.card {
+    height: 400px;
+    width: 200px;
+    margin: 50px;
+    background-color: #9a7207;
+    background-position: 50% 50%;
+    cursor: pointer;
+    display: flex;
+    border: 2px solid var(--cor01);
+    border-radius: 15px;
+    transition: 2s;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+
+#imovel01 {
+    background-image: url(./catalogo/01.png);
+    background-size: contain;
+}
+#imovel02 {
+    background-image: url(./catalogo/02.png);
+    background-size: contain;
+}
+#imovel03 {
+    background-image: url(./catalogo/03.png);
+    background-size: contain;
+}
+#imovel04 {
+    background-image: url(./catalogo/04.png);
+    background-size: contain;
+}
+#imovel05 {
+    background-image: url(./catalogo/05.png);
+    background-size: contain;
+}
+#imovel06 {
+    background-image: url(./catalogo/06.png);
+    background-size: contain;
+}
+#imovel07 {
+    background-image: url(./catalogo/07.png);
+    background-size: contain;
+}
+#imovel08 {
+    background-image: url(./catalogo/08.png);
+    background-size: contain;
+}
+#imovel09 {
+    background-image: url(./catalogo/09.png);
+    background-size: contain;
+}
+#imovel10 {
+    background-image: url(./catalogo/10.png);
+    background-size: contain;
+}
+
+#imovel11 {
+    background-image: url(./catalogo/11.png);
+    background-size: contain;
+}
+#imovel12 {
+    background-image: url(./catalogo/12.png);
+    background-size: contain;
+}
+#imovel13 {
+    background-image: url(./catalogo/13.png);
+    background-size: contain;
+}
+#imovel14 {
+    background-image: url();
+    background-size: contain;
+}
+
+/* index of testmony */
+.depoimento-container {
+    width: 800px;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 100px;
+    margin: auto;
+}
+
+.depoimento {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background: var(--cor02);
+    border: 2px solid var(--cor01);
+    transition: 1s;
+}
+.depoimento:hover {
+    scale: 1.02;
+}
+
+#familia01 {
+background-image: url(./book.de.imoveis/1.png);
+background-size: contain;
+}
+
+#familia02 {
+background-image: url(./book.de.imoveis/2.png);
+background-size: contain;
+}
+
+#familia03 {
+background-image: url(./book.de.imoveis/3.png);
+background-size: contain;
+}
+
+#familia04 {
+background-image: url(./book.de.imoveis/4.png);
+background-size: contain;
+}
+aside {
+    height: 250px;
+    width: 300x;
+    margin-top: 10px;
+    padding: 20px;
+    background-image: linear-gradient(var(--branco), var(--cor04), var(--cor01));
+}

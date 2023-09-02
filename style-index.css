@@ -1,0 +1,112 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Cantarell&family=Kdam+Thmor+Pro&family=Quicksand:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: o;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+}
+
+:root { 
+    --cor01: #9a7207;
+    --cor02: #a85d64;
+    --cor03: #963502;
+    --cor04: #fc8445;
+    --cor05: #0917f1;
+}
+
+/* style of index */
+
+#menu-index {
+    height: 632px;
+    width: 100%; 
+    display: grid;
+    grid-template-columns: 50% 40%;
+}
+
+#logo {
+    background-image: url(./book.de.imoveis/villa-bg.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+#logo-top-bar {
+    margin: 30px;
+    opacity: 10%;
+    transition: 5s;
+    border-radius: 50%;
+}
+#logo-top-bar:hover {
+    opacity: 55%;
+}
+
+header {
+    height: 400px;
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto;
+    margin-top: 100px;
+    padding: 30px;
+    align-items: center;
+
+}
+
+nav {
+height: 80%;
+}
+
+ul{
+    row-gap: 30px;
+    display: grid;
+    grid-template-columns: auto;
+}
+li {
+    padding: 10px;
+    background-image: linear-gradient(var(--cor02), var(--cor04));
+    border: 1px solid var(--cor03);
+    border-radius: 10px;
+    color: var(--cor01);
+    font-size: 20px;
+    cursor: pointer;
+    text-shadow: -0.7px 0 0 rgba(0, 0, 0, 0.548);
+    transition: 5s;
+}
+li:hover {
+    color: var(--cor03);
+    background-image: linear-gradient(var(--cor04), var(--cor02));
+}
+
+#brands-box {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.fa-brands {
+    transform: scale(1.5);
+    color: var(--cor01);
+    padding: 5px;
+    transition: 3s;
+    border-radius: 10px;
+}
+.fa-brands:hover {
+    color: var(--cor03);
+    box-shadow: inset 0 0 0 25px var(--cor01);   
+}
+
+footer {
+    border-top: 3px solid var(--cor03);
+    padding: 10px;
+    background-image: linear-gradient(var(--cor04), var(--cor03));
+    width: 1345px;
+    opacity: 80%;
+}
+
+small {
+    font-size: small;
+}
